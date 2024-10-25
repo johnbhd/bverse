@@ -3,8 +3,8 @@
 ## Topic
 App for displaying random Bible verses.
 
-![Bible Verse PC View](./assets/pcview.png)  
-![Bible Verse Mobile View](./assets/mobileview.png)
+![Bible Verse PC View](pcview.png)  
+![Bible Verse Mobile View](mobileview.png)
 
 ## Category
 For me and others who want inspiration.
