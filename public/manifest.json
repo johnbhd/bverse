@@ -1,0 +1,16 @@
+{
+    "short_name": "TimothyClass",
+    "name": "Timothy Class - Bible Verses",
+    "icons": [
+      {
+        "src": "/assets/tm-logo.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "theme_color": "#4a90e2"
+  }
+  
