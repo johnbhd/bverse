@@ -22,20 +22,21 @@ function BibleVerseGenerator() {
         {/* SEO Meta Tags */}
         <Helmet>
           <title>Timothy Class | Bible Verse of the Day</title>
-          <meta name="description" content={`"${verse.text}" - ${verse.reference}`} />
           <meta name="keywords" content="Bible, Bible Verses, Timothy Class, Scripture, Christian, Faith, Daily Devotions, Bible Verse Timothy Class, bverse tm, Inspirational Bible Quotes, Daily Bible Verse, Encouraging Scriptures, Bible Study, Gospel, Jesus Christ, God’s Word, Holy Bible, Devotional Scriptures, Spiritual Growth, Bible Teachings, Christian Faith, Prayer and Worship, Bible Quotes for Strength, Bible Verses About Hope, Bible Verses About Faith, Bible Verses for Encouragement, Christian Inspiration" />
           <meta name="author" content="Timothy Class" />
           <meta property="og:title" content="Bible Verse of the Day | Timothy Class" />
-          <meta property="og:description" content={`"${verse.text}" - ${verse.reference}`} />
-          <meta property="og:image" content="https://yourwebsite.com/assets/tm_logo.png" />
-          <meta property="og:url" content="https://yourwebsite.com" />
+          <meta name="description" content={`"${verse.text.replace(/"/g, '&quot;')}" - ${verse.reference}`} />
+          <meta property="og:description" content={`"${verse.text.replace(/"/g, '&quot;')}" - ${verse.reference}`} />
+          <meta property="og:image" content="https://bverse-tm.vercel.app/assets/tm_logo.png" />
+          <meta property="og:url" content="https://bverse-tm.vercel.app/" />
         </Helmet>
 
         <div className='content'>
           <h4 id='title'>
             Bible Verse For You
             <a href="https://www.facebook.com/TimothyClassPH" target="_blank" rel="noopener noreferrer">
-              <img src='./assets/tm-logo.png' id='tclogo' alt='Timothy Class Logo' />
+            <img src='/assets/tm-logo.png' id='tclogo' alt='Timothy Class Logo' />
+
             </a>
           </h4>
           <div className='verse-display'>
